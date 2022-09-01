@@ -6,6 +6,7 @@ CREATE DATABASE facebook_db;
 
 CREATE TABLE Data (
 ID SERIAL PRIMARY KEY,
+Name_page varchar(20),
 Date_post timestamp,
 Post varchar(500),
 Likes INT(20),
