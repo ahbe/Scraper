@@ -24,7 +24,7 @@ Request body:
 ```sh
 {
   "page": name of the page,
-  "number_pages": number of pages to scrape
+  "number_pages": number of pages to scrape ("this is optional with a default set to 3")
 
 }
 ```
