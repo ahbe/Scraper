@@ -14,5 +14,3 @@ Comments INT(20),
 Shares INT(20),
 
 );    
-insert into Role(RoleName)
-values ('Admin'),('User'),('postgres');
