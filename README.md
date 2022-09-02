@@ -16,7 +16,7 @@ To deploy the API we use docker-compose:
 ```sh
 docker-compose -f stack.yml up -d
 ```
-![Deployment](image\container.jpg)
+![Deployment](./image/container.jpg)
 
 ## Usage
 Use postman to send requests to the API.
@@ -28,19 +28,19 @@ Request body:
 
 }
 ```
-![Postman Example](image\postman.jpg)
+![Postman Example](./image/postman.jpg)
 
 ## Run tests
 For running FastAPI test:
 ```sh
 pytest
 ```
-![FastAPI Test](image\test.jpg)
+![FastAPI Test](./image/test.jpg)
 
 ## DataBase
 We use Postgres as our database for this project:
 
-![Database](image\adminer.jpg)
+![Database](./image/adminer.jpg)
 
 The schema for the Database is defined at _init.sql_
 ## Author
