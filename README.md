@@ -12,23 +12,37 @@
 > This a repository for the testing phase of Elyadata. It is an api to scrape public pages from facebook and save the data into a postgres database. 
 
 ## Install
-
+To deploy the API we use docker-compose:
 ```sh
 docker-compose -f stack.yml up -d
 ```
+![Deployment](image\container.jpg)
 
 ## Usage
-
+Use postman to send requests to the API.
+Request body:
 ```sh
-use postman
+{
+  "page": name of the page,
+  "number_pages": number of pages to scrape
+
+}
 ```
+![Postman Example](image\postman.jpg)
 
 ## Run tests
-
+For running FastAPI test:
 ```sh
-test
+pytest
 ```
+![FastAPI Test](image\test.jpg)
 
+## DataBase
+We use Postgres as our database for this project:
+
+![Database](image\adminer.jpg)
+
+The schema for the Database is defined at _init.sql_
 ## Author
 
 👤 **Ahmed Belarbi**
@@ -39,7 +53,6 @@ test
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if you liked this project!
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
